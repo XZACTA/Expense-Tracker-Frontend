@@ -1,0 +1,107 @@
+.register-page{
+  height:100vh;
+  background:linear-gradient(135deg,#e8f5e9,#f3f3f3);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family:"Poppins",sans-serif;
+}
+
+/* CARD */
+
+.register-card{
+  width:420px;
+  background:white;
+  padding:40px;
+  border-radius:20px;
+  box-shadow:0 15px 35px rgba(0,0,0,0.1);
+  text-align:center;
+}
+
+/* TITLE */
+
+.register-title{
+  font-size:28px;
+  margin-bottom:5px;
+}
+
+.register-subtitle{
+  font-size:14px;
+  color:#777;
+  margin-bottom:20px;
+}
+
+/* CAT */
+
+.register-cat{
+  width:190px;
+  margin-bottom:25px;
+}
+
+/* INPUT */
+
+.register-group{
+  text-align:left;
+  margin-bottom:18px;
+}
+
+.register-group label{
+  font-size:14px;
+}
+
+.register-group input{
+  width:95%;
+  padding:12px;
+  margin-top:6px;
+  border-radius:12px;
+  border:1px solid #ddd;
+  outline:none;
+}
+
+.register-group input:focus{
+  border-color:#0f5c2e;
+}
+
+/* REMEMBER */
+
+.register-remember{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  margin-bottom:20px;
+  font-size:14px;
+}
+
+/* BUTTON */
+
+.register-btn{
+  width:100%;
+  padding:14px;
+  border:none;
+  border-radius:12px;
+  background:#0f5c2e;
+  color:white;
+  font-size:16px;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.register-btn:hover{
+  background:#0c4723;
+  transform:translateY(-2px);
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* LOGIN LINK */
+
+.register-login{
+  margin-top:15px;
+  font-size:14px;
+  color:#555;
+}
+
+.register-login span{
+  color:#0f5c2e;
+  font-weight:600;
+  cursor:pointer;
+}
