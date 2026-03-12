@@ -9,6 +9,10 @@ function Register() {
     navigate("/");
   };
 
+  const signUp = () => {
+    navigate("/home");
+  }
+
   return (
     <div className="register-page">
 
@@ -40,12 +44,8 @@ function Register() {
           <input type="password" placeholder="Enter your password"/>
         </div>
 
-        <div className="register-remember">
-          <input type="checkbox"/>
-          <span>Remember me</span>
-        </div>
 
-        <button className="register-btn">
+        <button className="register-btn" onClick={signUp}>
           Sign up
         </button>
 

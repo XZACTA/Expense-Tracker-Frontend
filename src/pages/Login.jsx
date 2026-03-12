@@ -9,6 +9,10 @@ function Login() {
     navigate("/home");
   };
 
+  const goToRegister = () => {
+    navigate("/register");
+  };
+
   return (
     <div className="login-page">
 
@@ -51,6 +55,11 @@ function Login() {
         <button className="login-btn" onClick={handleLogin}>
           Sign in
         </button>
+
+        <p className="login-register">
+          Already have an account? 
+          <span onClick={goToRegister}> Sign in</span>
+        </p>
 
         
 
