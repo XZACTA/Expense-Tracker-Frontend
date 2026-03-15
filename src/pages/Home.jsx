@@ -14,6 +14,7 @@ function Home() {
           <li>Income</li>
           <li>Expense</li>
           <li>Savings</li>
+          <li>Wallet</li>
           <li>Profile</li>
         </ul>
 
@@ -22,18 +23,27 @@ function Home() {
       {/* MAIN */}
       <div className="home-main">
 
-        <h1 className="home-title">Dashboard</h1>
+        {/* TOP BAR */}
+        <div className="home-topbar">
+          <h1 className="home-title">Dashboard</h1>
+
+          <div className="home-user">
+            <span>Hello, User 👋</span>
+            <button className="home-logout">Logout</button>
+          </div>
+        </div>
+
 
         {/* SUMMARY CARDS */}
         <div className="home-cards">
 
           <div className="home-card income">
-            <h3>Income</h3>
+            <h3>Total Income</h3>
             <p>฿12,500</p>
           </div>
 
           <div className="home-card expense">
-            <h3>Expense</h3>
+            <h3>Total Expense</h3>
             <p>฿4,200</p>
           </div>
 
@@ -43,6 +53,21 @@ function Home() {
           </div>
 
         </div>
+
+
+        {/* QUICK ACTION */}
+        <div className="home-actions">
+
+          <button className="action-income">
+            + Add Income
+          </button>
+
+          <button className="action-expense">
+            + Add Expense
+          </button>
+
+        </div>
+
 
         {/* CAT SAVING */}
         <div className="home-saving">
@@ -60,8 +85,8 @@ function Home() {
 
         </div>
 
-        {/* TRANSACTION TABLE */}
 
+        {/* TRANSACTION TABLE */}
         <div className="home-table">
 
           <h2>Recent Transactions</h2>
